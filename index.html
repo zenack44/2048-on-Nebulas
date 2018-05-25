@@ -6,10 +6,11 @@
   <title>2048 on Nebulas</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link href="style/ui-block.css" rel="stylesheet" type="text/css">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
@@ -26,17 +27,6 @@
       <p class="game-intro">Join the coins and get the
         <strong>Bitcoin</strong> tile !</p>
       <a class="restart-button" onclick="restart();">New Game</a>
-    </div>
-
-    <div class="select-wallet-file">
-      <label class="file empty">
-        <span data-i18n="swf/button">Select Nebulas Wallet File</span>
-        <input type="file">
-      </label>
-      <label class="hide pass">
-        <span data-i18n="swf/good">Your wallet is encrypted. Good! Please enter the password:</span>
-        <input type="password">
-      </label>
     </div>
 
     <div class="game-container">
@@ -100,15 +90,13 @@
     <p>
       <strong class="important">Notes</strong>
     </p>
-    This application uses a public Smart Contract and has been done for the
-    <a href="https://nebulas.io/incentive.html" target="_blank">Nebulas Incentive Program</a>
+    This application uses a <a href="https://explorer.nebulas.io/#/address/n1rptWohgwPUH511Mn7Lr2LNE6nmd94gMZ9" target="_blank">public Smart Contract</a>
+     and has been done for the <a href="https://nebulas.io/incentive.html" target="_blank">Nebulas Incentive Program</a>
     <br/>
-    <br/> You need to create a NAS wallet ? Follow this
-    <a href="https://medium.com/nebulasio/creating-a-nas-wallet-9d01b5fa2df6"
-      target="_blank">guide</a>
+    <br/> You don't have a Nebulas wallet? <br>Please install : <a href="https://github.com/ChengOrangeJu/WebExtensionWallet" target="_blank"> Nebulas Web Extension Wallet</a><br>
     <br/> You are a developer? I invite you to participate with the invitation code
     <strong>Fj6Xq</strong> or with this
-    <a href="https://incentive.nebulas.io/signup.html?invite=Fj6Xq" target="_blank">link</a>.
+    <a href="https://incentive.nebulas.io/signup.html?invite=Fj6Xq" target="_blank">referral link</a>.
     <br />
 
     <br /> This is an edited version of 2048 based on
@@ -118,23 +106,20 @@
     <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
   </div>
 
-  <script src=lib/jquery-3.3.1.min.js></script>
-  <script src=lib/nebulas.js></script>
-  <script src=lib/bootbox.min.js></script>
-  <script src=js/1-localSave.js></script>
-  <script src=js/i18n.js data-depends=jquery.slim></script>
-  <script src=js/ui-block.js data-depends="bootbox blockies jquery.slim i18n.js nebulas.js"></script>
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/sweetalert.min.js"></script>
-  <script src="js/application.js"></script>
+  <script type="text/javascript" src="js/bind_polyfill.js"></script>
+  <script type="text/javascript" src="js/classlist_polyfill.js"></script>
+  <script type="text/javascript" src="js/animframe_polyfill.js"></script>
+  <script type="text/javascript" src="js/keyboard_input_manager.js"></script>
+  <script type="text/javascript" src="js/html_actuator.js"></script>
+  <script type="text/javascript" src="js/grid.js"></script>
+  <script type="text/javascript" src="js/tile.js"></script>
+  <script type="text/javascript" src="js/local_storage_manager.js"></script>
+  <script type="text/javascript" src="js/game_manager.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/sweetalert.min.js"></script>
+  <script type="text/javascript" src="js/nebulas.js"></script>
+  <script type="text/javascript" src="js/nebPay.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
 </body>
 
 </html>

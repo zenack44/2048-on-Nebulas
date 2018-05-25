@@ -9,11 +9,11 @@ Use your arrow keys to move the tiles.
 When two tiles with the same picture touch, they merge into one.
 Join the coins et get the Bitcoin tile! 
 
-You can connect to your Nebulas Wallet with your keystore and password to publish 
-your score on the Nebulas Blockchain with a Smart Contract.
+Play the game here : https://zenack44.github.io/2048-on-Nebulas/
 If you need to create a Nebulas Wallet, you can follow this guide : https://medium.com/nebulasio/creating-a-nas-wallet-9d01b5fa2df6
+or install the Nebulas Web Wallet Extension : https://github.com/ChengOrangeJu/WebExtensionWallet
 
-## Nebulas Smart Conract
+## Nebulas Smart Contract
 This game uses a Smart Contract to save your score et display best scores.
 The public address of the Smart Contract is : `n1rptWohgwPUH511Mn7Lr2LNE6nmd94gMZ9`
 The source code of the Smart Contract is in the file : `scoresContract.js`

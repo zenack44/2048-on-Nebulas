@@ -23,17 +23,27 @@ function LocalStorageManager() {
   this.gameStateKey     = "gameState";
 
   var supported = this.localStorageSupported();
-  this.storage = supported ? window.localStorage : window.fakeStorage;
+  this.storage = window.sessionStorage;
 }
 
 LocalStorageManager.prototype.localStorageSupported = function () {
-  var testKey = "test";
-  var storage = window.localStorage;
+ // var testKey = "test";
+  //var storage = window.localStorage;
 
-  try {
-    storage.setItem(testKey, "1");
-    storage.removeItem(testKey);
-    return true;
+  //var testKey = 'test', storage = window.localStorage;
+
+  //try {
+  //  storage.setItem(testKey, "1");
+   // storage.removeItem(testKey);
+  //  return true;
+
+  var testKey = 'test', storage = window.sessionStorage;
+  
+  try 
+  {
+      storage.setItem(testKey, '1');
+      storage.removeItem(testKey);
+      return true;
   } catch (error) {
     return false;
   }
