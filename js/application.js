@@ -135,6 +135,8 @@ function onClickPostScore() {
 
           nebPay.call(contract_address, 0, "postScore", JSON.stringify([name, score]), {
               listener: function(resp) {
+
+                if(resp.indexOf('Error') = -1){
                   // Prevent to send two times the same score
                   score_is_saved = true;
 
@@ -145,6 +147,7 @@ function onClickPostScore() {
                       icon: "success",
                       button: false,
                   });
+                }
               }
           });
       } catch (err) {
